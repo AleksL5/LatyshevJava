@@ -40,9 +40,14 @@ public class Main {
 
         int[] numbers = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.print("Чётные числа в диапазоне от 1 до 10: ");
+
         for (int number : numbers) {
-            if (number % 2 == 0)
-                System.out.print(number + " ");
+            if (number % 2 == 0) {
+                System.out.print(number);
+                if (number != numbers.length)
+                    System.out.print(", ");
+                else System.out.println(".");
+            }
         }
     }
 }
