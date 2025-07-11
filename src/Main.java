@@ -9,10 +9,10 @@ public class Main {
         System.out.println("Введите два числа");
 
         System.out.print("Число \"a\" равно ");
-        long a = scanner.nextLong();
+        long a = scanner.nextInt();
 
         System.out.print("Число \"b\" равно ");
-        long b = scanner.nextLong();
+        long b = scanner.nextInt();
 
         scanner.nextLine();
 
@@ -20,7 +20,7 @@ public class Main {
                 "Сравнение: %s, Сложение: %d, Вычетание: %d, Деление: %s, Умножение: %d",
                 a > b ? "a > b" :
                         a < b ? "a < b" :
-                                "a = b", a + b, a - b, b == 0 ? "На 0 делить нельзя" : String.valueOf(a / b), a * b
+                                "a = b", a + b, a - b, b == 0 ? "На 0 делить нельзя" : String.valueOf((double) a / b), a * b
         ));
 
         //Задание 2
