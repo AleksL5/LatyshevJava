@@ -9,10 +9,10 @@ public class Main {
         System.out.println("Введите два числа");
 
         System.out.print("Число \"a\" равно ");
-        long a = scanner.nextInt();
+        long a = scanner.nextLong();
 
         System.out.print("Число \"b\" равно ");
-        long b = scanner.nextInt();
+        long b = scanner.nextLong();
 
         scanner.nextLine();
 
